@@ -1,9 +1,12 @@
 #include <stdio.h>
 
 int main(){
+
   int populacao1, populacao2, turista1, turista2;
   float area1, area2, pib1, pib2;
   char codigo1[3], codigo2[3], cidade1[20], cidade2[20], estado1[20], estado2[20];
+
+  //Perguntas para registros de cartas.
 
   printf("Qual a letra que representa o estado da carta 1?\n", estado1);
   scanf("%s", &estado1);
@@ -46,6 +49,8 @@ int main(){
 
   printf("Qual o número de pontos turisticos da carta 2?\n", turista2);
   scanf("%d", &turista2);
+
+  //Apresentação das duas cartas
 
   printf("Carta 1:\nestado: %s\nCódigo: %s\nNome da Cidade: %s\nPopulação: %d\nárea: %f\nPIB: %f\nnúmero de pontos turisticos: %d\n\n", estado1, codigo1, cidade1, populacao1, area1, pib1, turista1);
   printf("Carta 2:\nestado: %s\nCódigo: %s\nNome da Cidade: %s\nPopulação: %d\nárea: %f\nPIB: %f\nnúmero de pontos turisticos: %d\n", estado2, codigo2, cidade2, populacao2, area2, pib2, turista2);
