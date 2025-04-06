@@ -37,7 +37,7 @@ int main() {
     switch (opcao)
     {
         case 1:
-            printf("população: %s = %d | %s = %d\n", nome1, populacao1, nome2, populacao2);
+            printf("população: %s = %lu | %s = %lu\n", nome1, populacao1, nome2, populacao2);
             if (populacao1 > populacao2)
                 printf("Resultado: %s venceu!\n", nome1);
             else if (populacao2 > populacao1)
@@ -57,7 +57,7 @@ int main() {
         break;
 
         case 3:
-            printf("PIB: %s = %d | %s = %d\n", nome1, pib1, nome2, pib2);
+            printf("PIB: %s = %.2f | %s = %.2f\n", nome1, pib1, nome2, pib2);
             if (pib1 > pib2)
                 printf("Resultado: %s venceu!\n", nome1);
             else if (pib2 > pib1)
@@ -67,20 +67,20 @@ int main() {
         break;
 
         case 4:
-            printf("população: %s = %d | %s = %d\n", nome1, populacao1, nome2, populacao2);
-            if (populacao1 > populacao2)
+            printf("pontos turisticos: %s = %d | %s = %d\n", nome1, pontosTuristicos1, nome2, pontosTuristicos2);
+            if (pontosTuristicos1 > pontosTuristicos2)
                 printf("Resultado: %s venceu!\n", nome1);
-            else if (populacao2 > populacao1)
+            else if (pontosTuristicos2 > pontosTuristicos1)
                 printf("Resultado: %s venceu!\n", nome2);
             else
                 printf("Empate!\n");
         break;
         
         case 5:
-            printf("população: %s = %d | %s = %d\n", nome1, populacao1, nome2, populacao2);
-            if (populacao1 > populacao2)
+            printf("Densidade populacional: %s = %.2f | %s = %.2f\n", nome1, densidadePopulacional1, nome2, densidadePopulacional2);
+            if (densidadePopulacional2 > densidadePopulacional1)
                 printf("Resultado: %s venceu!\n", nome1);
-            else if (populacao2 > populacao1)
+            else if (densidadePopulacional1 > densidadePopulacional2)
                 printf("Resultado: %s venceu!\n", nome2);
             else
                 printf("Empate!\n");
